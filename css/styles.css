@@ -33,9 +33,9 @@ section {
 /* TYPOGRAPHY */
 h1, h2, h3 {
   font-family: 'Playfair Display', serif;
-  font-size: 4em;
+  font-size: 2.9em;
   font-weight: bold;
-  line-height: 1.1em;
+  line-height: 1em;
   margin-bottom: 0.7em;
 }
 
@@ -111,7 +111,7 @@ header img {
 
 header p {
   padding: 0 5%;
-  font-size: 1.2em;
+  font-size: 1.1em;
 }
 
 /* WORK SECTION */
