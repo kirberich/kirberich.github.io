@@ -59,6 +59,16 @@ a {
 
 a:hover {
   color: #202C39;
+  background: white;
+}
+
+a.highlight {
+  padding: 3px 5px;
+  background-size: 100% 94%;
+}
+
+.big {
+  font-size: 1.3vmax;
 }
 
 /* YELLOW HIGHLIGHT */
@@ -160,4 +170,27 @@ header p {
 .services-icon--switch {
   transform: rotate(5deg);
   margin-top: 13em;
+}
+
+/* CALL ME MAYBE SECTION */
+#call-me-maybe p {
+  margin-bottom: 1.5em;
+}
+
+.call-me-maybe-content {
+  display: flex;
+}
+
+.call-me-maybe-photo {
+  background-image: url(../img/microchip.svg);
+  background-repeat: no-repeat;
+  background-position: center top;
+  height: 250px;
+  min-width: 250px;
+}
+
+.call-me-maybe-photo img {
+  width: 50%;
+  margin-top: 63px;
+  margin-left: 63px;
 }
