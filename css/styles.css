@@ -1,0 +1,126 @@
+/*
+Fonts
+font-family: 'Space Mono', monospace;
+font-family: 'Overpass Mono', monospace;
+font-family: 'Playfair Display', serif;
+
+Colors
+black: #080705;
+yellow: #FFCC00; rgba(255,204,0)
+blue: #202C39;
+*/
+
+/* STRUCTURE */
+body {
+  color: #080705;
+}
+
+main {
+  max-width: 1040px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+section {
+  margin-bottom: 50px;
+}
+
+.clr {
+  clear: both;
+}
+
+/* TYPOGRAPHY */
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3.3vmax;
+  font-weight: bold;
+  line-height: 1.1em;
+  margin-bottom: 0.7em;
+}
+
+h2 {
+  font-size: 2vmax;
+}
+
+h3 {
+  font-size: 1.5vmax;
+}
+
+p {
+  font-family: 'Overpass Mono', monospace;
+  font-size: 1vmax;
+  line-height: 1.7em;
+  margin-bottom: 0.5em;
+}
+
+a {
+  color: #080705;
+}
+
+a:hover {
+  color: #202C39;
+}
+
+/* YELLOW HIGHLIGHT */
+.highlight {
+  background-image: linear-gradient(left, #FFCC00 0%, #FFCC00 100%);
+  background-image: -webkit-linear-gradient(left, #FFCC00 0%, #FFCC00 100%);
+  background-image: -moz-linear-gradient(left, #FFCC00 0%, #FFCC00 100%);
+  background-image: -ms-linear-gradient(left, #FFCC00 0%, #FFCC00 100%);
+  background-image: -o-linear-gradient(left, #FFCC00 0%, #FFCC00 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 80%;
+  background-position: left bottom;
+}
+
+.highlight--half {
+  background-size: 100% 35%;
+  width: 100%;
+}
+
+/* HEADER */
+header {
+  text-align: center;
+  margin: 8% auto 5%;
+  max-width: 800px;
+}
+
+header img {
+  width: 50%;
+  max-height: 100px;
+  margin-bottom: 3%;
+}
+
+header p {
+  padding: 0 5%;
+  font-size: 1.2vmax;
+}
+
+/* WORK SECTION */
+#work article {
+  width: 31%;
+  float: left;
+  margin-top: 1%;
+  margin-right: 3%;
+  text-align: justify;
+}
+
+@media only screen and (max-width: 600px) {
+  #work article {
+    width: 100%;
+    margin-right: 0;
+  }
+}
+
+#work article:last-of-type {
+  margin-right: 0;
+}
+
+#work article img {
+  width: 100%;
+  margin: 0 0 5% 0;
+}
+
+#work article h3 {
+  text-align: center;
+}
