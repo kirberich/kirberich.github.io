@@ -13,11 +13,12 @@ blue: #202C39;
 /* STRUCTURE */
 body {
   color: #080705;
+  font-size: 15px;
 }
 
 main {
   max-width: 1040px;
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -32,23 +33,29 @@ section {
 /* TYPOGRAPHY */
 h1, h2, h3 {
   font-family: 'Playfair Display', serif;
-  font-size: 3.3vmax;
+  font-size: 4em;
   font-weight: bold;
   line-height: 1.1em;
   margin-bottom: 0.7em;
 }
 
 h2 {
-  font-size: 2vmax;
+  font-size: 2.5em;
 }
 
 h3 {
-  font-size: 1.5vmax;
+  font-size: 1.8em;
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2.5em;
+  }
 }
 
 p {
   font-family: 'Overpass Mono', monospace;
-  font-size: 1vmax;
+  font-size: 1em;
   line-height: 1.55em;
   margin-bottom: 0.7em;
 }
@@ -68,7 +75,8 @@ a.highlight {
 }
 
 .big {
-  font-size: 1.3vmax;
+  font-size: 1.3em;
+  line-height: 2em;
 }
 
 /* YELLOW HIGHLIGHT */
@@ -103,7 +111,7 @@ header img {
 
 header p {
   padding: 0 5%;
-  font-size: 1.2vmax;
+  font-size: 1.2em;
 }
 
 /* WORK SECTION */
@@ -115,7 +123,7 @@ header p {
   text-align: justify;
 }
 
-@media only screen and (max-width: 600px) {
+@media (max-width: 600px) {
   #work article {
     width: 100%;
     margin-right: 0;
@@ -150,7 +158,7 @@ header p {
 }
 
 .services-icon {
-  width: 8vw;
+  width: 9em;
 }
 
 .services-icon--hardware {
@@ -172,6 +180,41 @@ header p {
   margin-top: 13em;
 }
 
+@media (max-width: 600px) {
+  #services p {
+    text-align: left;
+  }
+
+  .services-content-column--right {
+    order: -1;
+    margin-right: -22%;
+  }
+
+  .services-content-column--middle {
+    margin-left: 30px;
+  }
+
+  .services-content-column {
+    padding: 0;
+  }
+
+  .services-icon {
+    width: 5em;
+  }
+
+  .services-icon--build {
+    margin-top: 46em;
+  }
+
+  .services-icon--software {
+    margin-top: 19em;
+  }
+
+  .services-icon--switch {
+    margin-top: 55em;
+  }
+}
+
 /* CALL ME MAYBE SECTION */
 #call-me-maybe p {
   margin-bottom: 1.5em;
@@ -181,11 +224,22 @@ header p {
   display: flex;
 }
 
+.call-me-maybe-content div {
+  margin-bottom: 2em;
+}
+
+@media (max-width: 600px) {
+  .call-me-maybe-content {
+    flex-direction: column;
+  }
+}
+
 .call-me-maybe-photo {
   background-image: url(../img/microchip.svg);
   background-repeat: no-repeat;
   background-position: center top;
   height: 250px;
+  width: 250px;
   min-width: 250px;
 }
 
@@ -193,4 +247,10 @@ header p {
   width: 50%;
   margin-top: 63px;
   margin-left: 63px;
+}
+
+@media (max-width: 600px) {
+  .call-me-maybe-photo {
+    margin: 0 auto;
+  }
 }
