@@ -49,8 +49,8 @@ h3 {
 p {
   font-family: 'Overpass Mono', monospace;
   font-size: 1vmax;
-  line-height: 1.7em;
-  margin-bottom: 0.5em;
+  line-height: 1.55em;
+  margin-bottom: 0.7em;
 }
 
 a {
@@ -123,4 +123,41 @@ header p {
 
 #work article h3 {
   text-align: center;
+}
+
+/* SERVICES SECTION */
+#services p {
+  margin-bottom: 1.5em;
+  text-align: justify;
+}
+
+.services-content {
+  display: flex;
+}
+
+.services-content-column {
+  padding: 0 1.5em;
+}
+
+.services-icon {
+  width: 8vw;
+}
+
+.services-icon--hardware {
+  transform: rotate(40deg);
+  margin-top: 0.5em;
+}
+
+.services-icon--build {
+  transform: rotate(-5deg);
+  margin-top: 10em;
+}
+
+.services-icon--software {
+  margin-top: 8em;
+}
+
+.services-icon--switch {
+  transform: rotate(5deg);
+  margin-top: 13em;
 }
